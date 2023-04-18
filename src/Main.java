@@ -14,5 +14,12 @@ public class Main {
     6. W main stwórz instancję Zoo i następnie dodaj kilka zwierząt do zoo.
        Na koniec wyświetl zwierzęta w konsoli dzięki metodzie printAllAnimals()
  */
+
+        Zoo<Animal> zoo = new Zoo<>();
+        Tiger tiger = new Tiger("Tygrys bengalski", 5);
+        zoo.addAnimal(tiger);
+        Lion lion = new Lion("Lew afrykański", 12);
+        zoo.addAnimal(lion);
+        zoo.printAllAnimals();
     }
 }
